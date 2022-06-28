@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+body {
+  max-width: 450px;
+  max-height: 800px;
+  min-height: 600px;
+  min-width: 300px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0c1729;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  main {
+    width: 90%;
+    height: 85%;
+    background-color: #16263f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: white;
+
+    .image {
+      position: relative;
+      width: 85%;
+      height: 50%;
+      border-radius: 10px 10px 10px;
+      overflow: hidden;
+
+      background-image: url(/nft-preview-card-component-main/images/image-equilibrium.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      background-position: center;
+      margin-bottom: 5%;
+      .hover-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #00fff8;
+        opacity: 0;
+        position: absolute;
+        z-index: 5;
+      }
+      .hover-div:hover {
+        opacity: 70%;
+        cursor: pointer;
+      }
+    }
+    .content {
+      width: 85%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      header {
+        width: 100%;
+        height: 20%;
+        margin-bottom: 1%;
+        h1 {
+          width: 80%;
+          text-align: left;
+          font-size: 22px;
+          transition: 0.4s;
+        }
+        h1:hover {
+          color: #00fff8;
+          cursor: pointer;
+        }
+      }
+
+      .text {
+        display: flex;
+        justify-content: center;
+        align-items: cent;
+        margin-bottom: 5%;
+        p {
+          text-align: left;
+          line-height: 180%;
+          color: #8eabd5;
+        }
+      }
+      .info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 160%;
+        border-bottom: 1px solid #2e4058;
+        margin-bottom: 5%;
+        padding-bottom: 4%;
+        .time {
+          color: #8eabd5;
+        }
+        .course {
+          color: #00fff8;
+        }
+      }
+      footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #8eabd5;
+        span {
+          color: white;
+          transition: 0.4s;
+        }
+        span:hover {
+          cursor: pointer;
+          color: #00fff8;
+        }
+
+        img {
+          border: 1px solid white;
+          border-radius: 50%;
+          margin-right: 5%;
+        }
+      }
+    }
+  }
+  .attribution {
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 3%;
+    color: white;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}

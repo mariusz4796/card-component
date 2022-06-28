@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  max-width: 450px;
+  max-height: 800px;
+  min-height: 600px;
+  min-width: 300px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0c1729;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main {
+  width: 90%;
+  height: 85%;
+  background-color: #16263f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px 10px;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: white;
+}
+
+body main .image {
+  position: relative;
+  width: 85%;
+  height: 50%;
+  border-radius: 10px 10px 10px;
+  overflow: hidden;
+  background-image: url(/nft-preview-card-component-main/images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5%;
+}
+
+body main .image .hover-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #00fff8;
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+}
+
+body main .image .hover-div:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+body main .content {
+  width: 85%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .content header {
+  width: 100%;
+  height: 20%;
+  margin-bottom: 1%;
+}
+
+body main .content header h1 {
+  width: 80%;
+  text-align: left;
+  font-size: 22px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body main .content header h1:hover {
+  color: #00fff8;
+  cursor: pointer;
+}
+
+body main .content .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: cent;
+      -ms-flex-align: cent;
+          align-items: cent;
+  margin-bottom: 5%;
+}
+
+body main .content .text p {
+  text-align: left;
+  line-height: 180%;
+  color: #8eabd5;
+}
+
+body main .content .info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 160%;
+  border-bottom: 1px solid #2e4058;
+  margin-bottom: 5%;
+  padding-bottom: 4%;
+}
+
+body main .content .info .time {
+  color: #8eabd5;
+}
+
+body main .content .info .course {
+  color: #00fff8;
+}
+
+body main .content footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8eabd5;
+}
+
+body main .content footer span {
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body main .content footer span:hover {
+  cursor: pointer;
+  color: #00fff8;
+}
+
+body main .content footer img {
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 5%;
+}
+
+body .attribution {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 3%;
+  color: white;
+}
+
+body .attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
