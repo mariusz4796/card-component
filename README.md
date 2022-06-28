@@ -1,2 +1,3 @@
-# space
-info for people intrested in space turism
+# NFT preview card component
+
+card component using pure html and scss + flexbox.
